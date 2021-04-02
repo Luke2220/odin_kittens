@@ -1,0 +1,6 @@
+    <p>Kitten <%=@kitten.name%></p>
+    <p>Cuteness: <%=@kitten.softness%></p>
+    <p>Softness: <%=@kitten.cuteness%></p>
+    <p>Age: <%=@kitten.age%></p>
+
+    <%=link_to 'Edit Kitten', edit_kitten_path(@kitten.id)%>
