@@ -1,5 +1,7 @@
 # README
 
+This is a follow along project from the Odin Project that can be found here: https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/kittens-api
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

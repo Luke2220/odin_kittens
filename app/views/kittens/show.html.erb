@@ -3,4 +3,6 @@
     <p>Softness: <%=@kitten.cuteness%></p>
     <p>Age: <%=@kitten.age%></p>
 
-    <%=link_to 'Edit Kitten', edit_kitten_path(@kitten.id)%>
+    <%=link_to 'Edit Kitten', edit_kitten_path(@kitten.id)%><br/>
+     <%=link_to 'Delete Kitten', kitten_path(@kitten.id), method: 'delete'%><br/>
+      <%=link_to 'Back to Home', kittens_path%>

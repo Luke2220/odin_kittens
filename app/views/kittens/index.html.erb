@@ -1,7 +1,11 @@
-<h1>Kitten Collection:</h1>
+<h1>Kitten Collection</h1>
+ <%= link_to 'Create new Kitten', new_kitten_path%><br/><br/>
+ <h2>Kittens:</h2>
 <%@kittens.each do |kitten|%>
     <p>Name: <%=kitten.name%></p>
     <p>Cuteness: <%=kitten.softness%></p>
     <p>Softness: <%=kitten.cuteness%></p>
     <p>Age: <%=kitten.age%></p>
+    <%= link_to 'View Kitten Page', kitten_path(kitten.id)%><br/>
+      <%=link_to 'Delete Kitten', kitten_path(kitten.id), method: 'delete'%>
 <%end%><br/>
